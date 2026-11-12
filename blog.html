@@ -3,53 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - CotilleosCiencia</title>
+    <title>Cotilleos de Ciencia | Newton contra Hooke</title>
+    <link rel="icon" href="img/ciencia.png" type="image/svg+xml" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Canal RSS"
+      title="Canal RSS de Cotilleos de Ciencia"
       href="rss.xml"
     />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
   </head>
-  <body>
+  <body id="inicio">
     <header>
-      <img
-        src="img/ciencia.png"
-        alt="Logotipo del sitio"
-        width="150"
-        height="150"
-      />
-      <h1>Blog</h1>
+      <a
+        href="index.html"
+        title="Ir a la página principal de Cotilleos de Ciencia"
+      >
+        <img
+          src="img/ciencia.png"
+          alt="Logotipo de Cotilleos de Ciencia"
+          width="150"
+          height="150"
+        />
+      </a>
+      <p>Historias ocultas, rivalidades épicas y anécdotas de laboratorio.</p>
     </header>
 
-    <nav>
+    <nav aria-label="Menú principal">
       <ul>
         <li>
-          <a href="index.html" title="Ir a la página principal">Inicio</a>
+          <a
+            href="index.html"
+            title="Página de inicio con los resúmenes del sitio"
+            >Inicio</a
+          >
         </li>
         <li>
-          <a href="blog.html" title="Leer nuestro artículo de blog">Blog</a>
+          <a
+            href="blog.html"
+            aria-current="page"
+            title="Leer el artículo completo sobre rivalidades científicas"
+            >Blog</a
+          >
         </li>
-        <li><a href="tabla.html" title="Ver la tabla de datos">Datos</a></li>
         <li>
-          <a href="galeria.html" title="Ver la galería multimedia">Galería</a>
+          <a
+            href="tabla.html"
+            title="Consultar la tabla comparativa de grandes disputas científicas"
+            >Tabla de rivalidades</a
+          >
         </li>
         <li>
-          <a href="formulario.html" title="Acceder al formulario de contacto"
-            >Contacto</a
+          <a
+            href="galeria.html"
+            title="Ver galería de imágenes, audios y vídeos científicos"
+            >Galería multimedia</a
+          >
+        </li>
+        <li>
+          <a
+            href="formulario.html"
+            title="Enviar un cotilleo científico o suscribirse al boletín"
+            >Participa</a
           >
         </li>
       </ul>
     </nav>
 
     <main id="contenido">
+      <h1>Crónicas de laboratorio: la guerra entre Newton y Hooke</h1>
+
       <article>
-        <h2>Cotilleos</h2>
-        <h3>Llevan conejos por diversión y crean un de las mayores plagas de Australia</h3>
-        <p>Unos cazadores llevan a 5 conejos a Australia, para cazarlos "por diversión" y acaban generando una de las peores plagas de Australia, debido a que no logran cazarlos a todos y estos se reproducen
-            a una velocidad muy alta lo cual conlleva a una sobrepooblación de conejos que, provoca que el equilibrio que había entre los seres que habitan en Australia y en la cadena alimenticia de estos ase vea muy afectada.
+        <header>
+          <h2>
+            Cómo una carta sobre la gravedad desató décadas de rencor en la
+            Royal Society
+          </h2>
+          <p>
+            Publicado el
+            <time datetime="2026-11-02">2 de noviembre de 2026</time>
+          </p>
+        </header>
+
+        <section>
+          <h3>El origen del desencuentro científico</h3>
+          <p>
+            Antes de que Isaac Newton publicara su obra maestra
+            <cite>Philosophiae Naturalis Principia Mathematica</cite>, Robert
+            Hooke ya era el experimentador estrella de Londres gracias a su
+            célebre libro <cite>Micrographia</cite>. Hooke había estudiado desde
+            el comportamiento de los gases como el CO<sub>2</sub> y el O<sub
+              >2</sub
+            >
+            en bombas de vacío hasta la naturaleza de la luz, manteniendo el
+            <i>status quo</i> intelectual de la Royal Society.
+          </p>
+          <p>
+            El choque estalló en torno a la
+            <b>ley del inverso del cuadrado</b> (proporcional a
+            1/r<sup>2</sup>), que explica cómo disminuye la atracción
+            gravitatoria con la distancia. Hooke afirmó haber intuido antes esa
+            relación matemática y exigió que Newton reconociera su contribución
+            en el prólogo de la 1.ª edición de los <cite>Principia</cite>.
+          </p>
+
+          <blockquote cite="https://royalsociety.org/">
+            <p>
+              «Si he logrado ver más lejos, ha sido porque he subido a hombros
+              de gigantes.»
+            </p>
+            <footer>
+              — Isaac Newton en carta a Robert Hooke (<time
+                datetime="1676-02-05"
+                >5 de febrero de 1676</time
+              >), conservada en los archivos de <cite>The Royal Society</cite>.
+            </footer>
+          </blockquote>
+
+          <p>
+            Aunque hoy se cita como un elogio a la ciencia colaborativa, muchos
+            historiadores señalan que Newton escribió esa frase con cierta
+            ironía, ya que Hooke tenía una estatura muy baja y sufría una
+            marcada desviación de espalda.
+          </p>
+        </section>
+
+        <hr />
+
+        <section>
+          <h3>Cronología epistolar y el debate sobre las órbitas</h3>
+          <p>
+            La correspondencia entre ambos científicos siguió una secuencia muy
+            tensa que puede resumirse en tres hitos:
+          </p>
+
+          <ol>
+            <li>
+              <strong>1672:</strong> Hooke critica duramente la teoría
+              corpuscular de la luz presentada por Newton.
+            </li>
+            <li>
+              <strong>1679:</strong> Hooke escribe a Newton proponiendo analizar
+              el movimiento planetario mediante:
+              <ul>
+                <li>Un movimiento inercial tangencial en línea recta.</li>
+                <li>Una fuerza atractiva dirigida hacia el cuerpo central.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>1686:</strong> Newton elimina casi todas las menciones a
+              Hooke antes de enviar su manuscrito a imprenta.
+            </li>
+          </ol>
+
+          <p>
+            En aquella discusión de 1679, ambos discrepaban sobre la trayectoria
+            exacta que seguiría un objeto que cayera hacia el centro de la
+            Tierra si esta no fuera sólida:
+          </p>
+          <p>
+            <strong>Nota importante:</strong> Ningún retrato pintado en vida de
+            Robert Hooke ha llegado hasta nuestros días, lo que alimentó la
+            leyenda de que Newton ordenó destruirlo
+            <em>deliberadamente</em> cuando asumió la presidencia de la
+            institución.
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <h2>Dato Extra</h2>
+        <h3>
+          Llevan conejos por diversión y crean un de las mayores plagas de
+          Australia
+        </h3>
+        <p>
+          Unos cazadores llevan a 5 conejos a Australia, para cazarlos "por
+          diversión" y acaban generando una de las peores plagas de Australia,
+          debido a que no logran cazarlos a todos y estos se reproducen a una
+          velocidad muy alta lo cual conlleva a una sobrepooblación de conejos
+          que, provoca que el equilibrio que había entre los seres que habitan
+          en Australia y en la cadena alimenticia de estos ase vea muy afectada.
         </p>
         <img
           src="img/conejos.jpg"
