@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - CotilleosCiencia</title>
     <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Canal RSS"
-      href="rss.xml"
-    />
+    <link rel="alternate" type="application/rss+xml" title="Canal RSS de Cotilleos de Ciencia" href="rss.xml">
     <link rel="icon" href="img/ciencia.png" type="image/svg+xml" />
   </head>
   <body>
@@ -45,30 +40,68 @@
     </nav>
 
     <main id="contenido">
-      <h3>¿De qué trata el sitio web?</h3>
+        <section id="presentacion">
+      <h2>¿De qué trata este archivo científico?</h2>
       <p>
-        En este Blog podeis encontrar un cotilleo  diario acerca del mundo
-        científico, dirigido a todos los públicos que quieran aprender algo más
-        sobre la ciencia en el mundo.
+        Detrás de cada fórmula perfecta y de cada premio Nobel suele esconderse una buena historia humana:
+        investigadores que no se dirigían la palabra, patentes disputadas en los tribunales y experimentos
+        que salieron al revés de lo previsto. En este sitio recopilamos los salseos más documentados de la historia de la ciencia.
       </p>
+      <p>
+        <a href="#resumenes" title="Saltar directamente a los resúmenes de contenidos del sitio">
+          Ir directamente a los últimos cotilleos publicados
+        </a>
+      </p>
+    </section>
+
+    <section id="resumenes">
+      <h2>Avances y contenidos destacados</h2>
 
       <article>
-        <h3>Cotilleos recientes.</h3>
-        <h4>Anciana descubre un nuevo hongo creciendo en su nevera.</h4>
+        <h3>La guerra silenciosa entre Isaac Newton y Robert Hooke</h3>
+        <img src="img/newton-hooke.jpg" alt="Retrato clásico de época representando la física del siglo XVII" width="600" height="350">
+        <p>Publicado el <time datetime="2026-11-02">2 de noviembre de 2026</time></p>
         <p>
-          Doña Juana de 70 años, descubre que se dejo un tomate cortado a la
-          mitad en el fondo de la nevera hace más de 20 años, y llama a
-          científicos, porque descubre que el tomate tiene "bichos extraños" que
-          se mueven haciendo zigzag, los científicos lo declaran como un nuevo
-          hongo capaz de moverse, llamado platybusmobilis.
+          Analizamos cómo una carta sobre la gravitación desató una de las enemistades más feroces de la Royal Society
+          y qué hay de cierto en la famosa frase sobre los hombros de gigantes.
         </p>
-        <img
-          src="img/seta.jpg"
-          alt="La imágen del hongo, ya cultivado."
-          width="150"
-          height="150"
-        />
+        <p>
+          <a href="blog.html" title="Acceder al artículo completo en la sección Blog">
+            Leer el artículo completo sobre Newton y Hooke en el blog
+          </a>
+        </p>
       </article>
+
+      <article>
+        <h3>Cronología comparada de las mayores disputas por patentes</h3>
+        <img src="img/rivalidades.jpg" alt="Documentos antiguos y planos técnicos sobre una mesa de trabajo" width="600" height="350" loading="lazy">
+        <p>Actualizado el <time datetime="2026-11-03">3 de noviembre de 2026</time></p>
+        <p>
+          Desde la guerra de las corrientes entre Tesla y Edison hasta la carrera por la estructura del ADN:
+          revisa los datos clave, fechas y veredictos históricos en nuestra tabla estructurada.
+        </p>
+        <p>
+          <a href="tabla.html" title="Consultar la tabla completa de disputas científicas">
+            Explorar la tabla comparativa de rivalidades científicas
+          </a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Archivo visual y sonoro de experimentos curiosos</h3>
+        <img src="img/laboratorio.jpg" alt="Material de vidrio e instrumentos científicos en un laboratorio" width="600" height="350" loading="lazy">
+        <p>Publicado el <time datetime="2026-11-04">4 de noviembre de 2026</time></p>
+        <p>
+          Recorre nuestra galería con nueve piezas gráficas en distintos formatos, un mapa interactivo de lugares históricos,
+          grabaciones de audio y un vídeo documental con subtítulos.
+        </p>
+        <p>
+          <a href="galeria.html" title="Abrir la galería de imágenes y recursos multimedia">
+            Visitar la galería multimedia y recursos audiovisuales
+          </a>
+        </p>
+      </article>
+    </section>  
     </main>
 
     <footer>
@@ -81,7 +114,10 @@
         Publicado el <time datetime="2026-11-11"></time> 11 de noviembre de
         2026.
       </p>
-      <p><a href="#contenido">Volver arriba</a></p>
+      <p>
+      <a href="rss.xml" title="Abrir el archivo XML del canal de sindicación RSS">Suscribirse al canal RSS de Cotilleos de Ciencia</a> |
+      <a href="#contenido" title="Desplazarse hasta la parte superior de la página">Volver al principio de la página</a>
+    </p>
     </footer>
   </body>
 </html>

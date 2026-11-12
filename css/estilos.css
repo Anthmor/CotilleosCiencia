@@ -1,0 +1,145 @@
+/* Estilos generales y tipografía */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #f8fafc;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-bottom: 4px solid #0284c7;
+}
+
+/* Navegación */
+nav {
+  background-color: #e2e8f0;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: #0369a1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.35rem 0.6rem;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+  background-color: #cbd5e1;
+}
+
+/* Indica la página activa */
+nav a[aria-current="page"] {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Enlaces generales */
+a {
+  color: #0369a1;
+}
+
+a:hover,
+a:focus {
+  color: #0c4a6e;
+}
+
+/* Bloques de contenido */
+section,
+article,
+aside {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+aside {
+  background-color: #ffffff;
+  border-left: 4px solid #0284c7;
+}
+
+/* Contenido multimedia adaptable */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablas*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #334155;
+  text-align: left;
+}
+
+thead th {
+  background-color: #011749;
+  color: #ffffff;
+}
+
+tfoot td,
+tfoot th {
+  background-color: #e2e8f0;
+  font-weight: bold;
+}
+
+/* Formularios*/
+fieldset {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #94a3b8;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.4rem;
+}
+
+/* Pie de página */
+footer {
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #38bdf8;
+}
