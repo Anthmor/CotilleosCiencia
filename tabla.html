@@ -3,15 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - CotilleosCiencia</title>
+    <title>Cotilleos de Ciencia | Tabla de grandes disputas científicas</title>
     <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="Canal RSS"
-      href="rss.xml"
-    />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="Canal RSS de Cotilleos de Ciencia" href="rss.xml">
+    <link rel="icon" href="img/ciencia.png" type="image/svg+xml" />
   </head>
   <body>
     <header>
@@ -21,18 +16,18 @@
         width="150"
         height="150"
       />
-      <h1>Blog</h1>
+      <h1>CotilleosCiencia</h1>
     </header>
 
-    <nav>
+    <nav aria-label="Menú principal">
       <ul>
         <li>
-          <a href="index.html" title="Ir a la página principal">Inicio</a>
+          <a href="index.html"  title="Ir a la página principal">Inicio</a>
         </li>
         <li>
           <a href="blog.html" title="Leer nuestro artículo de blog">Blog</a>
         </li>
-        <li><a href="tabla.html" title="Ver la tabla de datos">Datos</a></li>
+        <li><a href="tabla.html" aria-current="page" title="Ver la tabla de datos">Datos</a></li>
         <li>
           <a href="galeria.html" title="Ver la galería multimedia">Galería</a>
         </li>
@@ -43,55 +38,95 @@
         </li>
       </ul>
     </nav>
-<main>
-    <h2>Información Tabular del Proyecto</h2>
-    <p>A continuación se presenta una tabla detallada que recopila las diferentes métricas, recursos implementados y estados de desarrollo asociados al sitio web. Los datos están organizados por categorías técnicas para facilitar su lectura y análisis.</p>
 
-    <table>
-      <caption>Resumen de componentes y estado de desarrollo del sitio</caption>
-      <thead>
-        <tr>
-          <th scope="col">Categoría</th>
-          <th scope="col">Componente / Recurso</th>
-          <th scope="col">Estado</th>
-          <th scope="col">Puntuación / Grado</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row" rowspan="2">Multimedia</th>
-          <td>Vídeo Local y Subtítulos</td>
-          <td>Completado</td>
-          <td>95%</td>
-        </tr>
-        <tr>
-          <td>Galería de Imágenes (Formatos variados)</td>
-          <td>Completado</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <th scope="row">Estructura</th>
-          <td>Páginas HTML5 (5 documentos)</td>
-          <td>Validado</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <th scope="row" colspan="2">Evaluación Global del Bloque Técnico</th>
-          <td>Aprobado</td>
-          <td>9.5</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th scope="row" colspan="3">Promedio General de Cumplimiento</th>
-          <td>98%</td>
-        </tr>
-      </tfoot>
-    </table>
+    <main id="contenido">
+      <h1>Registro comparado de grandes rivalidades científicas</h1>
 
-    <p><strong>Conclusión:</strong> Tal como se refleja en los datos tabulares, todos los apartados principales del proyecto cumplen rigurosamente con los estándares exigidos, alcanzando un nivel óptimo de preparación para su defensa.</p>
-  </main>
+    <section>
+      <h2>Cómo interpretar esta tabla cronológica</h2>
+      <p>
+        La siguiente tabla recopila seis de las controversias de autoría y patentes más sonadas de la historia de la ciencia.
+        Los casos están agrupados por <strong>disciplina científica</strong> en la primera columna para facilitar su lectura,
+        indicando para cada disputa los investigadores enfrentados, el periodo en el que ocurrió el conflicto y el consenso
+        histórico aceptado en la actualidad.
+      </p>
+
+      <table>
+        <caption>Principales disputas de autoría y patentes en la historia de la ciencia (siglos XVII-XX)</caption>
+
+        <thead>
+          <tr>
+            <th rowspan="2" scope="col">Disciplina</th>
+            <th rowspan="2" scope="col">Motivo del conflicto</th>
+            <th colspan="2" scope="colgroup">Contexto de la disputa</th>
+            <th rowspan="2" scope="col">Veredicto histórico actual</th>
+          </tr>
+          <tr>
+            <th scope="col">Protagonistas</th>
+            <th scope="col">Periodo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">Física</td>
+            <th scope="row">Invención del cálculo infinitesimal</th>
+            <td>Isaac Newton frente a Gottfried Leibniz</td>
+            <td>1699 – 1716</td>
+            <td>Se reconoce el desarrollo independiente de ambos; hoy se usa la notación de Leibniz.</td>
+          </tr>
+          <tr>
+            <th scope="row">Guerra de las corrientes (CA frente a CC)</th>
+            <td>Nikola Tesla y George Westinghouse frente a Thomas Edison</td>
+            <td>1886 – 1893</td>
+            <td>Triunfo técnico de la corriente alterna (CA) para el transporte eléctrico a larga distancia.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Biología y Medicina</td>
+            <th scope="row">Estructura de doble hélice del ADN</th>
+            <td>Rosalind Franklin frente a James Watson y Francis Crick</td>
+            <td>1951 – 1953</td>
+            <td>Se reconoce que la Fotografía 51 de Franklin fue clave para deducir el modelo.</td>
+          </tr>
+          <tr>
+            <th scope="row">Origen microbiano de las enfermedades</th>
+            <td>Louis Pasteur frente a Antoine Béchamp</td>
+            <td>1860 – 1885</td>
+            <td>Confirmación de la teoría germinal de Pasteur como base de la microbiología moderna.</td>
+          </tr>
+          <tr>
+            <td>Química</td>
+            <th scope="row">Descubrimiento del oxígeno</th>
+            <td>Carl Wilhelm Scheele, Joseph Priestley y Antoine Lavoisier</td>
+            <td>1771 – 1777</td>
+            <td>Scheele lo aisló primero, Priestley publicó antes y Lavoisier explicó su papel en la combustión.</td>
+          </tr>
+          <tr>
+            <td>Astronomía</td>
+            <th scope="row">Publicación del catálogo estelar británico</th>
+            <td>John Flamsteed frente a Isaac Newton y Edmond Halley</td>
+            <td>1704 – 1715</td>
+            <td>Flamsteed quemó 300 copias de la edición no autorizada y publicó su versión definitiva.</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4">Total de controversias históricas documentadas en el archivo</th>
+            <td>6 disputas científicas</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p>
+        <strong>Conclusión de los datos:</strong> Como se observa en la recopilación, la mayoría de los enfrentamientos
+        surgieron cuando dos equipos trabajaban de forma simultánea sobre un mismo problema abierto o cuando los datos
+        experimentales de un investigador se difundían antes de su publicación formal.
+      </p>
+    </section>
     
+    </main>
+
     <footer>
       <address>
         Contacto:
@@ -102,7 +137,10 @@
         Publicado el <time datetime="2026-11-11"></time> 11 de noviembre de
         2026.
       </p>
-      <p><a href="#contenido">Volver arriba</a></p>
+      <p>
+      <a href="rss.xml" title="Abrir el archivo XML del canal de sindicación RSS">Suscribirse al canal RSS de Cotilleos de Ciencia</a> |
+      <a href="#contenido" title="Desplazarse hasta la parte superior de la página">Volver al principio de la página</a>
+    </p>
     </footer>
   </body>
 </html>
