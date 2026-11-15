@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Cotilleos de Ciencia</title>
+    <link>https://Anthmor.github.io/CotilleosCiencia/</link>
+    <description>Historias ocultas, rivalidades épicas y anécdotas documentadas de laboratorio.</description>
+    <language>es</language>
+
+    <item>
+      <title>La guerra silenciosa entre Isaac Newton y Robert Hooke</title>
+      <link>https://Anthmor.github.io/CotilleosCiencia/blog.html</link>
+      <guid>https://Anthmor.github.io/CotilleosCiencia/blog.html</guid>
+      <pubDate>Mon, 02 Nov 2026 10:00:00 +0100</pubDate>
+      <description>Analizamos cómo una carta sobre la gravitación desató una de las enemistades más feroces de la Royal Society.</description>
+    </item>
+
+    <item>
+      <title>Cronología comparada de las mayores disputas por patentes</title>
+      <link>https://Anthmor.github.io/CotilleosCiencia/tabla.html</link>
+      <guid>https://Anthmor.github.io/CotilleosCiencia/tabla.html</guid>
+      <pubDate>Tue, 03 Nov 2026 10:00:00 +0100</pubDate>
+      <description>Desde la guerra de las corrientes hasta la estructura del ADN: fechas, protagonistas y veredictos históricos.</description>
+    </item>
+
+    <item>
+      <title>Archivo visual y sonoro de experimentos curiosos</title>
+      <link>https://Anthmor.github.io/CotilleosCiencia/galeria.html</link>
+      <guid>https://Anthmor.github.io/CotilleosCiencia/galeria.html</guid>
+      <pubDate>Wed, 04 Nov 2026 10:00:00 +0100</pubDate>
+      <description>Galería en múltiples formatos, mapa interactivo, grabaciones de audio y vídeo con subtítulos.</description>
+    </item>
+  </channel>
+</rss>
