@@ -35,11 +35,11 @@ LMSGI UD 2. HTML 5
 - Canal RSS.
 ## Validación
 ### HTML
-![Resultado de validación HTML](img/validacion-html.png)
+![Resultado de validación HTML](img/Captura%20de%20pantalla%202026-11-15%20142659.png)
 ### CSS
-![Resultado de validación CSS](img/validacion-css.png)
+![Resultado de validación CSS](img/Captura%20de%20pantalla%202026-11-15%20142927.png)
 ### RSS
-![Resultado de validación RSS](img/validacion-rss.png)
+![Resultado de validación RSS](img/Captura%20de%20pantalla%202026-11-15%20143028.png)
 
 ## Dificultades encontradas
 Describe al menos tres dificultades reales:
