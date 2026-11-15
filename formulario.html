@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - CotilleosCiencia</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="alternate" type="application/rss+xml" title="Canal RSS de Cotilleos de Ciencia" href="rss.xml">
+    <link rel="icon" href="img/ciencia.png" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/ciencia.png"
+        alt="Logotipo del sitio"
+        width="150"
+        height="150"
+      />
+      <h1>CotilleosCiencia</h1>
+    </header>
+
+    <nav aria-label="Menú principal">
+      <ul>
+        <li>
+          <a href="index.html" title="Ir a la página principal">Inicio</a>
+        </li>
+        <li>
+          <a href="blog.html" title="Leer nuestro artículo de blog">Blog</a>
+        </li>
+        <li><a href="tabla.html" title="Ver la tabla de datos">Datos</a></li>
+        <li>
+          <a href="galeria.html" title="Ver la galería multimedia">Galería</a>
+        </li>
+        <li>
+          <a href="formulario.html" aria-current="page" title="Acceder al formulario de contacto"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="contenido">
+        <h1>Envía un cotilleo científico o únete al club de investigación</h1>
+
+    <section>
+      <h2>Formulario de aportación editorial</h2>
+      <p>
+        ¿Conoces alguna rivalidad histórica, un experimento fallido o una anécdota documentada de laboratorio?
+        Compártela con nuestro equipo. Los campos marcados con <strong>*</strong> son obligatorios.
+        <em>Aviso: este formulario es una simulación educativa y no almacena datos reales.</em>
+      </p>
+
+      <form name="form-cotilleos" action="formulario.html" method="get">
+
+        <fieldset>
+          <legend>1. Identificación del colaborador</legend>
+
+          <p>
+            <label for="alias">Alias o seudónimo científico *:</label><br>
+            <input
+              type="text"
+              id="alias"
+              name="alias"
+              placeholder="Ej. Ada_Lovelace99"
+              minlength="4"
+              maxlength="20"
+              pattern="[A-Za-z0-9_-]{4,20}"
+              required>
+            <small>(Entre 4 y 20 caracteres: letras, números, guiones o guion bajo).</small>
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico de contacto *:</label><br>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="colaborador@ciencia.example"
+              required>
+          </p>
+
+          <p>
+            <label for="clave">Clave de seguimiento del envío *:</label><br>
+            <input
+              type="password"
+              id="clave"
+              name="clave"
+              placeholder="Mínimo 6 caracteres"
+              minlength="6"
+              maxlength="16"
+              required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Datos de la anécdota o disputa científica</legend>
+
+          <p>
+            <label for="disciplina">Rama de la ciencia principal *:</label><br>
+            <select id="disciplina" name="disciplina" required>
+              <option value="">-- Selecciona una disciplina --</option>
+              <option value="fisica" selected>Física y Astronomía</option>
+              <option value="quimica">Química</option>
+              <option value="biologia">Biología y Medicina</option>
+              <option value="matematicas">Matemáticas e Informática</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="anio-suceso">Año aproximado del acontecimiento *:</label><br>
+            <input
+              type="number"
+              id="anio-suceso"
+              name="anio_suceso"
+              min="1500"
+              max="2026"
+              step="1"
+              value="1880"
+              required>
+          </p>
+
+          <p>
+            <label for="fecha-consulta">Fecha en la que consultaste la fuente *:</label><br>
+            <input
+              type="date"
+              id="fecha-consulta"
+              name="fecha_consulta"
+              min="2020-01-01"
+              max="2026-12-31"
+              required>
+          </p>
+
+          <p>
+            <label for="nivel-salseo">Nivel de intensidad de la rivalidad (de 1 a 10):</label><br>
+            <input
+              type="range"
+              id="nivel-salseo"
+              name="nivel_salseo"
+              min="1"
+              max="10"
+              step="1"
+              value="7">
+          </p>
+
+          <p>
+            <label for="relato">Relato detallado y referencias bibliográficas *:</label><br>
+            <textarea
+              id="relato"
+              name="relato"
+              rows="5"
+              cols="50"
+              minlength="20"
+              maxlength="1000"
+              placeholder="Describe los protagonistas, el contexto histórico y dónde se publicó..."
+              required></textarea>
+          </p>
+
+          <p>
+            <label for="documento">Adjuntar recorte, imagen o documento de apoyo (opcional):</label><br>
+            <input
+              type="file"
+              id="documento"
+              name="documento"
+              accept=".jpg,.jpeg,.png,.webp,.pdf">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Preferencias de publicación y confirmación</legend>
+
+          <p>Tipo de fuente utilizada *:</p>
+          <p>
+            <input type="radio" id="fuente-archivo" name="tipo_fuente" value="archivo" checked>
+            <label for="fuente-archivo">Carta o archivo histórico original</label><br>
+
+            <input type="radio" id="fuente-libro" name="tipo_fuente" value="libro">
+            <label for="fuente-libro">Libro o biografía divulgativa</label><br>
+
+            <input type="radio" id="fuente-articulo" name="tipo_fuente" value="articulo">
+            <label for="fuente-articulo">Artículo académico o prensa científica</label>
+          </p>
+
+          <p>Opciones adicionales:</p>
+          <p>
+            <input type="checkbox" id="credito-publico" name="credito_publico" value="si" checked>
+            <label for="credito-publico">Mostrar mi alias como colaborador en el artículo</label><br>
+
+            <input type="checkbox" id="boletin" name="boletin" value="si">
+            <label for="boletin">Suscribirme al resumen mensual de curiosidades científicas</label><br>
+
+            <input type="checkbox" id="condiciones" name="condiciones" value="aceptado" required>
+            <label for="condiciones">Confirmo que la información aportada tiene fines educativos y no incluye datos sensibles *</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="submit" value="Enviar cotilleo científico">
+          <input type="reset" value="Limpiar formulario">
+          <button type="submit">Confirmar y enviar ahora</button>
+        </p>
+
+      </form>
+    </section>  
+    </main>
+
+    <footer>
+      <address>
+        Contacto:
+        <a href="mailto:amor0907@g.educaand.es">amor0907@g.educaand.es</a>
+      </address>
+      <p>&copy; 2026 Anthony Cristian Morar - Módulo LMSGI - 1º DAMA</p>
+      <p>
+        Publicado el <time datetime="2026-11-11"></time> 11 de noviembre de
+        2026.
+      </p>
+      <p>
+      <a href="rss.xml" title="Abrir el archivo XML del canal de sindicación RSS">Suscribirse al canal RSS de Cotilleos de Ciencia</a> |
+      <a href="#contenido" title="Desplazarse hasta la parte superior de la página">Volver al principio de la página</a>
+    </p>
+    </footer>
+  </body>
+</html>
