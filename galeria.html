@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - CotilleosCiencia</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="alternate" type="application/rss+xml" title="Canal RSS de Cotilleos de Ciencia" href="rss.xml">
+    <link rel="icon" href="img/ciencia.png" type="image/svg+xml" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/ciencia.png"
+        alt="Logotipo del sitio"
+        width="150"
+        height="150"
+      />
+      <h1>CotilleosCiencia</h1>
+    </header>
+
+    <nav aria-label="Menú principal">
+      <ul>
+        <li>
+          <a href="index.html" title="Ir a la página principal">Inicio</a>
+        </li>
+        <li>
+          <a href="blog.html" title="Leer nuestro artículo de blog">Blog</a>
+        </li>
+        <li><a href="tabla.html" title="Ver la tabla de datos">Datos</a></li>
+        <li>
+          <a href="galeria.html" aria-current="page" title="Ver la galería multimedia">Galería</a>
+        </li>
+        <li>
+          <a href="formulario.html" title="Acceder al formulario de contacto"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="contenido">
+    <h1>Archivo gráfico y audiovisual de curiosidades científicas</h1>
+
+    <section id="galeria-imagenes">
+      <h2>Galería de protagonistas, instrumentos y esquemas</h2>
+      <p>
+        Selección de nueve piezas visuales en distintos formatos optimizados según su naturaleza (fotografía, transparencia y gráficos vectoriales).
+      </p>
+
+      <figure>
+        <img src="img/galileo-telescopio.jpg" alt="Telescopio astronómico apuntando al cielo nocturno" width="400" height="260">
+        <figcaption>1. El telescopio de Galileo Galilei (1609), origen de fuertes debates con los astrónomos de su época.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/curie-laboratorio.jpg" alt="Mesa de laboratorio de química con frascos antiguos" width="400" height="260">
+        <figcaption>2. El cobertizo de París donde Marie y Pierre Curie aislaron el radio en condiciones precarias.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/tesla-bobina.jpg" alt="Descargas eléctricas en un experimento de alta tensión" width="400" height="260" loading="lazy">
+        <figcaption>3. Demostraciones públicas de Nikola Tesla durante la guerra de las corrientes.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/darwin-expedicion.jpg" alt="Cuaderno de campo abierto junto a una brújula antigua" width="400" height="260" loading="lazy">
+        <figcaption>4. La carta de Alfred Russel Wallace en 1858 que obligó a Darwin a acelerar su publicación.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/matraz-transparente.png" alt="Matraz Erlenmeyer con líquido azul sobre fondo transparente" width="300" height="260" loading="lazy">
+        <figcaption>5. Matraz de laboratorio recortado con canal alfa para integrarse sobre cualquier fondo.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/balanza-vectorial.svg" alt="Ilustración vectorial de una balanza de precisión científica" width="300" height="200" loading="lazy">
+        <figcaption>6. Esquema vectorial de balanza de laboratorio escalable sin pérdida de nitidez.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/atomo-animado.svg" alt="Representación vectorial animada de dos electrones orbitando un núcleo" width="300" height="200" loading="lazy">
+        <figcaption>7. Modelo atómico con animación vectorial nativa sin necesidad de JavaScript.</figcaption>
+      </figure>
+
+
+    <section id="mapa-interactivo">
+      <h2>Mapa interactivo de secciones del archivo</h2>
+      <p>
+        Haz clic sobre cada una de las tres figuras geométricas (rectángulo, círculo o triángulo) para navegar directamente a su sección correspondiente:
+      </p>
+
+      <img src="img/mapa-laboratorio.svg" alt="Panel interactivo dividido en tres zonas: Física, Disputas y Tu caso" usemap="#mapa-ciencia" width="600" height="300" loading="lazy">
+
+      <map name="mapa-ciencia">
+        <area shape="rect" coords="20,40,180,260" href="blog.html" alt="Acceder al artículo sobre Newton y Hooke" title="Ir al artículo de Física en el blog">
+        <area shape="circle" coords="300,150,80" href="tabla.html" alt="Acceder a la tabla comparativa de disputas" title="Ir a la tabla cronológica de rivalidades">
+        <area shape="poly" coords="420,260,500,40,580,260" href="formulario.html" alt="Acceder al formulario de participación" title="Ir al formulario para enviar un cotilleo">
+      </map>
+    </section>
+
+    <section id="multimedia-local">
+      <h2>Vídeo documental y cápsulas sonoras locales</h2>
+
+      <h3>Vídeo: Crónica breve de errores famosos en el laboratorio</h3>
+      <video controls poster="img/marte.jpg" width="640" height="360">
+        <source src="video/videoplayback.mp4" type="video/mp4">
+        
+        Tu navegador no soporta la reproducción de vídeo HTML5. Puedes descargar el archivo desde <a href="video/video.mp4">video/video.mp4</a>.
+      </video>
+      <p>
+        <strong>Descripción del vídeo:</strong> Resumen visual sobre descubrimientos accidentales como la penicilina de Alexander Fleming, con pistas de subtítulos activables en español e inglés.
+      </p>
+    </section>
+
+    <section id="contenido-externo">
+      <h2>Recursos audiovisuales y localización externa</h2>
+
+      <h3>Documental externo en YouTube</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QqsLTNkzvaY"
+        title="Vídeo divulgativo de ciencia en YouTube"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+      <p>
+        Si el reproductor incrustado no carga, puedes ver el contenido directamente en
+        <a href="https://www.youtube.com/watch?v=QqsLTNkzvaY" target="_blank" rel="noopener noreferrer" title="Abrir el vídeo divulgativo en una pestaña nueva de YouTube">
+          YouTube: vídeo de divulgación científica
+        </a>.
+      </p>
+    </section>
+    </main>
+
+    <footer>
+      <address>
+        Contacto:
+        <a href="mailto:amor0907@g.educaand.es">amor0907@g.educaand.es</a>
+      </address>
+      <p>&copy; 2026 Anthony Cristian Morar - Módulo LMSGI - 1º DAMA</p>
+      <p>
+        Publicado el <time datetime="2026-11-11"></time> 11 de noviembre de
+        2026.
+      </p>
+      <p>
+      <a href="rss.xml" title="Abrir el archivo XML del canal de sindicación RSS">Suscribirse al canal RSS de Cotilleos de Ciencia</a> |
+      <a href="#contenido" title="Desplazarse hasta la parte superior de la página">Volver al principio de la página</a>
+    </p>
+    </footer>
+  </body>
+</html>
