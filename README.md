@@ -1,5 +1,5 @@
-# Título del proyecto
-Breve descripción del sitio web y de su temática.
+# Título del proyecto (CotilleosCiencia).
+- Una página web en la que aparecen algunas curiosidades científicas para todos aqullos a los que les fascine el mundo de la ciencia.
 ## Autoría
 - Nombre y apellidos: Anthony Cristian Morar
 - Curso: 1º
